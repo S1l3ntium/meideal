@@ -36,7 +36,7 @@ get_header();
                   <i class="fab fa-instagram-square"></i>
                </a>
                <a href="" target="_blank">
-                  <i class="fab fa-facebook-square"></i>
+                  <i class="fab fa-facebook"></i>
                </a>
                <a href="" target="_blank">
                   <i class="fab fa-twitter"></i>
@@ -71,18 +71,23 @@ get_header();
       <section class="second__footer">
       <div class="container">
          <div class="row">
-            <div class="col-xl-6 networks">
+         <div class="col-xl-4 networks">
                <a href="" target="_blank">
                   <i class="fab fa-instagram-square"></i>
                </a>
                <a href="" target="_blank">
-                  <i class="fab fa-facebook-square"></i>
+                  <i class="fab fa-facebook"></i>
                </a>
                <a href="" target="_blank">
                   <i class="fab fa-twitter"></i>
                </a>
             </div>
-            <div class="partners col-xl-6">
+            <div class="col-xl-4 butt__down">
+               <section id="section02" class="demo">
+                  <a href=""><span></span></a>
+               </section>
+            </div>
+            <div class="partners col-xl-4">
                <a href="">Партнерам сюда</a>
             </div>
          </div>

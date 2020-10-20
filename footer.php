@@ -16,7 +16,7 @@ var myFullpage = new fullpage('#fullpage', {
 
 	//Скроллинг
 	css3: true,
-	scrollingSpeed: 700,
+	scrollingSpeed: 450,
 	autoScrolling: true,
 	fitToSection: true,
 	fitToSectionDelay: 1000,
@@ -76,7 +76,5 @@ var myFullpage = new fullpage('#fullpage', {
 	afterSlideLoad: function(section, origin, destination, direction){},
 	onSlideLeave: function(section, origin, destination, direction){}
 });
-</script>
-<script type="text/javascript">
 </script>
 </html>

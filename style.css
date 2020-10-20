@@ -35,7 +35,11 @@ header {
    align-items: center;
    justify-content: center;
    width: 100%;
-   background-color: #141414;
+   background-color: rgba(0, 0, 0, 0);
+   position: fixed;
+   top: 0px;
+   z-index: 999;
+   padding: 30px;
 }
 header .logo {
    display: flex;
@@ -183,7 +187,38 @@ button.problem:hover {
    align-items: flex-end;
    justify-content: flex-end;
 }
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-   background: #fff !important;
+.fp-viewing-firstPage #fp-nav ul li a span {
+   background: #fff;
+}
+.fp-viewing-secondPage #fp-nav ul li a span {
+   background: #000;
+}
+.fp-viewing-secondPage a {
+   color: #000;
+}
+.fp-viewing-secondPage header button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid #000;
+   box-sizing: border-box;
+   border-radius: 10px;
+   height: 50px;
+   margin: 10px 0;
+   color: #000;
+   background-color: rgba(0, 0, 0, 0);
+   font-family: AvenirNextCyr;
+   font-size: 14px;
+   transition: 0.6s all ease-in-out;
+}
+.fp-viewing-secondPage header button:hover {
+   color: #fff;
+   background-color: #000;
+   transition: 0.6s all ease-in-out;
+}
+.fp-viewing-firstPage header svg {
+   fill: #fff;
+}
+.fp-viewing-secondPage header svg {
+   fill: #000;
 }
