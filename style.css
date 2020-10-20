@@ -1,0 +1,189 @@
+@font-face {
+   font-family: AvenirNextCyr;
+   src: local("AvenirNextCyr-Light"), url("./assets/fonts/AvenirNextCyr-Light.woff2") format("woff2"),
+      url("./assets/fonts/AvenirNextCyr-Light.woff") format("woff");
+   font-weight: 400;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: AvenirNextCyr;
+   src: local("AvenirNextCyr-"), url("./assets/fonts/AvenirNextCyr-Medium.woff2") format("woff2"),
+      url("./assets/fonts/AvenirNextCyr-Medium.woff") format("woff");
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: AvenirNextCyr;
+   src: local("AvenirNextCyr-Bold"), url("./assets/fonts/AvenirNextCyr-Bold.woff2") format("woff2"),
+      url("./assets/fonts/AvenirNextCyr-Bold.woff") format("woff");
+   font-weight: 700;
+   font-style: normal;
+}
+body {
+   font-family: AvenirNextCyr;
+}
+.first {
+   color: #ffffff;
+   height: 100vh;
+   min-height: 100%;
+   background-color: #141414;
+}
+header {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   background-color: #141414;
+}
+header .logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+header .nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+   font-size: 14px;
+}
+.nav .nav__item {
+   margin-left: 50px;
+}
+header button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid #ffffff;
+   box-sizing: border-box;
+   border-radius: 10px;
+   height: 50px;
+   margin: 10px 0;
+   color: #ffffff;
+   background-color: rgba(0, 0, 0, 0);
+   font-family: AvenirNextCyr;
+   font-size: 14px;
+   transition: 0.6s all ease-in-out;
+}
+header button:hover {
+   color: #000;
+   background-color: #fff;
+   transition: 0.6s all ease-in-out;
+}
+a {
+   cursor: pointer;
+   color: #fff;
+   text-decoration: none;
+}
+.phrase {
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   flex-direction: column;
+   margin: 157px;
+}
+.phrase h2 {
+   font-family: AvenirNextCyr;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 24px;
+   line-height: 29px;
+}
+.phrase h1 {
+   margin: 20px 0;
+   font-family: AvenirNextCyr;
+   font-style: normal;
+   font-weight: 450;
+   font-size: 65px;
+   line-height: 80px;
+}
+button.problem {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid #ffffff;
+   box-sizing: border-box;
+   border-radius: 10px;
+   height: 60px;
+   width: 225px;
+   margin-top: 30px;
+   color: #000;
+   background-color: #fff;
+   font-family: AvenirNextCyr;
+   font-size: 18px;
+   transition: 0.6s all ease-in-out;
+}
+button.problem:hover {
+   color: #fff;
+   background-color: rgba(0, 0, 0, 0);
+   transition: 0.6s all ease-in-out;
+}
+.networks {
+   font-size: 20px;
+   display: flex;
+   flex-direction: column;
+}
+.networks a {
+   margin-top: 25px;
+}
+.first__footer .butt_down {
+   display: flex;
+   align-items: center;
+   justify-content: end;
+}
+.first__footer {
+   padding-bottom: 40px;
+}
+#section02 a {
+   padding-top: 60px;
+}
+#section02 a span {
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   width: 46px;
+   height: 46px;
+   margin-left: -23px;
+   border: 1px solid #fff;
+   border-radius: 100%;
+   box-sizing: border-box;
+}
+#section02 a span:hover {
+   background-color: #ffffff;
+   transition: 0.6s all ease-in-out;
+}
+#section02 a span::after {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   content: "";
+   width: 16px;
+   height: 16px;
+   margin: -12px 0 0 -8px;
+   border-left: 1px solid #fff;
+   border-bottom: 1px solid #fff;
+   -webkit-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+   box-sizing: border-box;
+}
+#section02 a span:hover:after {
+   border-left: 1px solid #000;
+   border-bottom: 1px solid #000;
+   transition: 0.6s all ease-in-out;
+}
+.partners {
+   font-family: AvenirNextCyr;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 18px;
+   line-height: 22px;
+   display: flex;
+   align-items: flex-end;
+   justify-content: flex-end;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+   background: #fff !important;
+}
