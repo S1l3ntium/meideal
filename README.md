@@ -1,3 +1,3 @@
 Meideal - private theme for WordPress
 
-<a>meideal.ru</a>
+[Meideal Company](http://meideal.ru)
