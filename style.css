@@ -24,10 +24,9 @@
 body {
    font-family: AvenirNextCyr;
 }
-.first {
+.first,
+.third {
    color: #ffffff;
-   height: 100vh;
-   min-height: 100%;
    background-color: #141414;
 }
 header {
@@ -86,16 +85,16 @@ a {
    align-items: flex-start;
    justify-content: center;
    flex-direction: column;
-   margin: 157px;
+   margin: 80px;
 }
-.phrase h2 {
+h2 {
    font-family: AvenirNextCyr;
    font-style: normal;
    font-weight: 300;
    font-size: 24px;
    line-height: 29px;
 }
-.phrase h1 {
+h1 {
    margin: 20px 0;
    font-family: AvenirNextCyr;
    font-style: normal;
@@ -113,20 +112,28 @@ button.problem {
    height: 60px;
    width: 225px;
    margin-top: 30px;
-   color: #000;
    background-color: #fff;
    font-family: AvenirNextCyr;
    font-size: 18px;
    transition: 0.6s all ease-in-out;
 }
-button.problem:hover {
+button.problem a {
+   color: #000;
+   transition: 0.6s all ease-in-out;
+}
+button.problem:hover a {
    color: #fff;
+   transition: 0.6s all ease-in-out;
+}
+button.problem:hover {
    background-color: rgba(0, 0, 0, 0);
    transition: 0.6s all ease-in-out;
 }
 .networks {
    font-size: 20px;
    display: flex;
+   align-items: start;
+   justify-content: flex-end;
    flex-direction: column;
 }
 .networks a {
@@ -186,12 +193,16 @@ button.problem:hover {
    display: flex;
    align-items: flex-end;
    justify-content: flex-end;
+   white-space: nowrap;
 }
 .fp-viewing-firstPage #fp-nav ul li a span {
    background: #fff;
 }
 .fp-viewing-secondPage #fp-nav ul li a span {
    background: #000;
+}
+.fp-viewing-thirdPage #fp-nav ul li a span {
+   background: #fff;
 }
 .fp-viewing-secondPage a {
    color: #000;
@@ -221,4 +232,177 @@ button.problem:hover {
 }
 .fp-viewing-secondPage header svg {
    fill: #000;
+}
+.fp-viewing-thirdPage header svg {
+   fill: #fff;
+}
+.first .fp-tableCell,
+.second .fp-tableCell {
+   vertical-align: middle;
+   padding-bottom: 0;
+}
+.second {
+   overflow: hidden;
+}
+.phrase__second {
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   flex-direction: column;
+   margin: 80px;
+}
+.second__footer {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   margin-bottom: 40px;
+}
+h3 {
+   font-family: AvenirNextCyr;
+   font-style: normal;
+   font-weight: 750;
+   font-size: 20px;
+   line-height: 120.5%;
+   color: #262626;
+}
+.slider__works {
+   min-width: 0;
+   width: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: row;
+   z-index: 9;
+   margin-bottom: -50px;
+   position: relative;
+}
+.slider__works .slick-track {
+   display: flex;
+   min-width: 100%;
+}
+.card.slick-slide {
+   display: flex !important;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width: 265px;
+   height: 340px;
+   margin-left: 14px;
+   opacity: 0.5;
+   text-align: center;
+}
+.card h3 {
+   margin: 50px 40px;
+}
+.card p {
+   font-family: AvenirNextCyr;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 131.8%;
+   text-align: center;
+   color: #000000;
+   margin: 0 40px 40px 40px;
+}
+.card.slick-current button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid #262626;
+   box-sizing: border-box;
+   border-radius: 10px;
+   height: 50px;
+   width: 160px;
+   margin-top: 30px;
+   color: #000;
+   background-color: #fff;
+   font-family: AvenirNextCyr;
+   font-size: 18px;
+   transition: 0.6s all ease-in-out;
+}
+.card button {
+   display: none;
+}
+.card button:hover {
+   color: #fff;
+   background-color: #262626;
+   transition: 0.6s all ease-in-out;
+}
+.card.slick-current {
+   opacity: 1;
+   background: #ffffff;
+   box-shadow: 0px 0px 11px 11px rgba(0, 0, 0, 0.06);
+   border-radius: 20px;
+}
+.slider__works .slick-arrow {
+   background: #ffffff;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+   width: 54px;
+   height: 54px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 50%;
+   z-index: 10;
+}
+.slider__works .slick-arrow.prev-college {
+   left: 0;
+}
+.slider__works .slick-arrow.next-college {
+   right: 0;
+}
+.partners__third {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-end;
+   justify-content: flex-end;
+   font-family: AvenirNextCyr;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 17px;
+   color: #ffffff;
+}
+.partners__third h4 {
+   margin-left: 70px;
+}
+#buttons {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-direction: row;
+}
+button.call,
+button.write {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid #ffffff;
+   box-sizing: border-box;
+   border-radius: 10px;
+   background-color: rgba(0, 0, 0, 0);
+   transition: 0.6s all ease-in-out;
+   font-family: AvenirNextCyr;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 17px;
+   color: #ffffff;
+   width: 170px;
+   height: 50px;
+}
+button.call:hover,
+button.write:hover {
+   transition: 0.6s all ease-in-out;
+   color: #000;
+   background-color: #fff;
+}
+.phrase__auto h1 {
+   font-family: AvenirNextCyr;
+   font-style: normal;
+   font-weight: 750;
+   font-size: 65px;
+   line-height: 80px;
+   color: #ffffff;
 }
