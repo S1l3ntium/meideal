@@ -5,7 +5,7 @@ Template Name: Автоматизация
 ?>
 
 <?php get_header(); ?>
-<div id="fullpage">
+<div id="fullpage__auto">
    <div class="first section">
       <section class="first__center">
       <div class="container">
@@ -36,7 +36,7 @@ Template Name: Автоматизация
             </div>
             <div class="col-xl-4 butt__down">
                <section id="section02" class="demo">
-                  <a href="#secondPage"><span></span></a>
+                  <a id="destroy" href=""><span></span></a>
                </section>
             </div>
             <div class="partners col-xl-4">
@@ -46,3 +46,4 @@ Template Name: Автоматизация
       </div>
    </section>
    </div>
+   <?php get_footer(); ?>

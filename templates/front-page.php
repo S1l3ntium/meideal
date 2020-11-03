@@ -108,21 +108,48 @@ Template Name: Главная
       <section class="second__center">
          <div class="container">
             <div class="row">
-               <div class="phrase col-xl-12">
+               <div id="phrase_id" class="phrase__third col-xl-12">
                   <h1>Всегда на связи</h1>
                   <h2>Как тебе удобнее поболтать с нами?</h2>
                </div>
             </div>
             <div class="row">
                <div id="buttons" class="col-xl-12">
-                  <button id="btn1"class="call">
-                     <a href="">Заказать звонок</a>
-                  </button>
-                  <button id="btn2"class="write">
-                     <a href="">Написать</a>
-                  </button>
+                  <button id="btn" class="call">Заказать звонок</button>
+                  <button id="btn" class="write">Написать</button>
                </div>
             </div>
+         </div>
+         <div class="container">
+            <div class="row">
+                  <div class="call__form" style="display:none;">
+                     <div class="col-xl-12">
+                        <p>Заполни форму, и мы перезвоним!</p>
+                     </div>
+                     <div class="col-xl-12">
+                        <input type='text' placeholder='Ваше имя' class='input-line'></input>
+                        <div class="custom-select" style="width:360px;">
+                           <select>
+                              <option value="0">Услуга</option>
+                              <option value="1">Автоматизация</option>
+                              <option value="2">Web-разработка</option>
+                              <option value="3">Виртуальный рабочий офис</option>
+                              <option value="4">Хостинг</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-xl-12">
+                        <input type='text' placeholder='Ваш номер телефона' class='input-line'></input>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="write__form" style="display:none;">
+                     <div class="col-xl-12">456</div>
+                     <div class="col-xl-12"></div>
+                     <div class="col-xl-12"></div>
+                  </div>
+               </div>
          </div>
       </section>
       <section class="second__footer">
