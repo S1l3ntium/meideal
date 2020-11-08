@@ -20,10 +20,27 @@
             </svg></a>
             </div>
             <div class="nav col-xl-8">
-                  <a id="nav__button"class="nav__item" href="/#secondPage">Что умеем</a>
+                  <a id="nav__button"class="nav__item" href="/#secondPage">Что&nbsp;умеем</a>
                   <a class="nav__item" href="/#thirdPage">Связь</a>
+                  <div class="hide__write__words"  style="display:none;">
+                     <a class="write__menu__words">Если стесняешься, то напиши</a>
+                  </div>
+                  <div class="hide__call__words"  style="display:none;">
+                     <a class="call__menu__words">Хочешь поговорить? Позвони!</a>
+                  </div>
             </div>
-            <button class="col-xl-2">Заказать звонок</button>
+            <div class="hide__write__button col-xl-2"  style="display:none;">
+               <button id="wrt__button" class="write__menu__button">Написать</button>
+            </div>
+            <div class="hide__call__button col-xl-2"  style="display:none;">
+               <button id="cll__button" class="call__menu__button">Позвонить</button>
+            </div>
+            <button class="main__button col-xl-2">Заказать звонок</button>
+            <!--
+            <div class="hide_back">
+               <button class="back__to__top">На главную</button>
+            </div>
+            -->
          </div>
       </div>
 	</header>

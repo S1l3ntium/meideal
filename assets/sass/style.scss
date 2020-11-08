@@ -66,6 +66,7 @@ header button {
    border: 1px solid #ffffff;
    box-sizing: border-box;
    border-radius: 10px;
+   width: 100%;
    height: 50px;
    margin: 10px 0;
    color: #ffffff;
@@ -78,6 +79,22 @@ header button:hover {
    color: #000;
    background-color: #fff;
    transition: 0.6s all ease-in-out;
+}
+.hide__write__words,
+.hide__call__words {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+   font-size: 14px;
+}
+.write__menu__words a,
+.call__menu__words a {
+   cursor: none;
+   color: #fff;
+   text-decoration: none;
+   align-self: flex-end;
 }
 a {
    cursor: pointer;
@@ -461,6 +478,82 @@ button.write:hover {
    line-height: 80px;
    color: #ffffff;
 }
+.call__form {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin-left: 80px;
+}
+.call__form .words p {
+   font-family: AvenirNextCyr;
+   font-style: normal;
+   font-weight: 750;
+   font-size: 40px;
+   line-height: 49px;
+   color: #ffffff;
+   margin-bottom: 95px;
+}
+.call__form .fields__form {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-direction: row;
+}
+.call__form .fields {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+.call__form .fields input {
+   margin-bottom: 56.5px;
+}
+.call__form .fields .call {
+   margin-top: 90px;
+   margin-right: 150px;
+   align-self: center;
+}
+
+.write__form {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin-left: 80px;
+}
+.write__form .words p {
+   font-family: AvenirNextCyr;
+   font-style: normal;
+   font-weight: 750;
+   font-size: 40px;
+   line-height: 49px;
+   color: #ffffff;
+   margin-bottom: 95px;
+}
+.write__form .fields__form {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-direction: row;
+}
+.write__form .fields {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+.write__form .fields input {
+   margin-bottom: 56.5px;
+}
+.write__form .fields .write {
+   margin-top: 90px;
+   margin-right: 150px;
+   align-self: center;
+}
+
 .hidden {
    display: none !important;
 }
@@ -470,7 +563,6 @@ input {
 .input-line {
    background: none;
    width: 360px;
-   margin-bottom: 10px;
    color: #fff;
    font-family: AvenirNextCyr;
    font-style: normal;
@@ -542,13 +634,11 @@ input {
 .select-selected {
    color: #fff;
    padding: 1px 2px;
-   border: 1px solid transparent;
-   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
    cursor: pointer;
 }
 /* Style items (options): */
 .select-items {
-   margin-top: 1px;
+   margin-top: 2px;
    position: absolute;
    background: #141414;
    top: 100%;
@@ -564,4 +654,43 @@ input {
 .select-items div:hover,
 .same-as-selected {
    background: #141414;
+}
+//textarea
+textarea {
+   border: none;
+   resize: none;
+}
+.textarea-line {
+   padding: 1px 2px;
+   padding-right: 70px;
+   background: none;
+   height: 26px;
+   width: 360px;
+   color: #fff;
+   font-family: AvenirNextCyr;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 18px;
+   line-height: 22px;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+   -webkit-transition: all 0.6s ease;
+   transition: all 0.6s ease;
+}
+.textarea-line:focus {
+   outline: none;
+   border-color: #fff;
+   -webkit-transition: all 0.6s ease;
+   transition: all 0.6s ease;
+}
+.message {
+   position: relative;
+}
+.message .limiter {
+   position: absolute;
+   top: 14px;
+   right: 145px;
+   margin: -12px 0 0 -8px;
+   box-sizing: border-box;
+   -webkit-transition: all 0.6s ease;
+   transition: all 0.6s ease;
 }

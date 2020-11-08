@@ -115,39 +115,62 @@ Template Name: Главная
             </div>
             <div class="row">
                <div id="buttons" class="col-xl-12">
-                  <button id="btn" class="call">Заказать звонок</button>
-                  <button id="btn" class="write">Написать</button>
+                  <button id="btn__call" class="call">Заказать звонок</button>
+                  <button id="btn__write" class="write">Написать</button>
                </div>
             </div>
          </div>
          <div class="container">
             <div class="row">
+            <!--
                   <div class="call__form" style="display:none;">
-                     <div class="col-xl-12">
+                     <div class="words col-xl-12">
                         <p>Заполни форму, и мы перезвоним!</p>
                      </div>
-                     <div class="col-xl-12">
-                        <input type='text' placeholder='Ваше имя' class='input-line'></input>
+                     <div class="fields__form">
+                        <div class="fields col-xl-6">
+                           <input type='text' placeholder='Ваше имя' class='input-line'></input>
+                           <input type='text' placeholder='Ваш номер телефона' class='input-line'></input>
+                        </div>
+                        <div class="fields col-xl-6">
                         <div class="custom-select" style="width:360px;">
-                           <select>
-                              <option value="0">Услуга</option>
-                              <option value="1">Автоматизация</option>
-                              <option value="2">Web-разработка</option>
-                              <option value="3">Виртуальный рабочий офис</option>
-                              <option value="4">Хостинг</option>
-                           </select>
+                              <select>
+                                 <option value="0">Услуга</option>
+                                 <option value="1">Автоматизация</option>
+                                 <option value="2">Web-разработка</option>
+                                 <option value="3">Виртуальный рабочий офис</option>
+                                 <option value="4">Хостинг</option>
+                              </select>
+                           </div>
+                           <button class="call">Заказать звонок</button>
                         </div>
                      </div>
-                     <div class="col-xl-12">
-                        <input type='text' placeholder='Ваш номер телефона' class='input-line'></input>
-                     </div>
                   </div>
+                  -->
+                  <?php
+                  echo do_shortcode('[contact-form-7 id="20" title="Позвонить"]');
+                  ?>
                </div>
                <div class="row">
                   <div class="write__form" style="display:none;">
-                     <div class="col-xl-12">456</div>
-                     <div class="col-xl-12"></div>
-                     <div class="col-xl-12"></div>
+                  <div class="words col-xl-12">
+                        <p>Просто напиши нам!</p>
+                     </div>
+                     <div class="fields__form">
+                        <div class="fields col-xl-6">
+                           <input type='text' placeholder='Ваше имя' class='input-line'></input>
+                           <input type='text' placeholder='Ваш номер телефона' class='input-line'></input>
+                        </div>
+                        <div class="fields col-xl-6">
+
+                           <div class="message">
+                              <textarea placeholder="Текст обращения" id="textarea" maxlength="200" class="textarea-line"></textarea>
+                              <div class="limiter"><span id="rchars">200</span>/200</div>
+                           </div>
+
+                           <button class="write">Написать</button>
+                        </div>
+                     </div>
                   </div>
                </div>
          </div>
