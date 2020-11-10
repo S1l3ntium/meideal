@@ -1,3 +1,8 @@
+<?php 
+/*
+Template Name: Страница в разработке
+*/
+?>
 <?php
 get_header();
 ?>

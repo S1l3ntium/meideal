@@ -72,32 +72,29 @@ Template Name: Главная
                      <i class="fab fa-twitter"></i>
                   </a>
                </div>
-               <div class="slider__works col-xl-10">
+               <div class="slider__works col-xl-11">
                   <div class="card">
                      <h3>Автоматизация</h3>
-                     <p>Автоматизируем любой бизнес-процесс на платформе 1С</p>
+                     <p>Данный раздел находится в разработке</p>
                      <button>
                         <a id="link" href="/automatization">Подробнее</a>
                      </button>
                   </div>
                   <div class="card">
                      <h3>Web-разработка</h3>
-                     <p>Автоматизируем любой бизнес-процесс на платформе 1С</p>
+                     <p>Данный раздел находится в разработке</p>
                      <button>Подробнее</button>
                   </div>
                   <div class="card">
                      <h3>Хостинг</h3>
-                     <p>Автоматизируем любой бизнес-процесс на платформе 1С</p>
+                     <p>Данный раздел находится в разработке</p>
                      <button>Подробнее</button>
                   </div>
                   <div class="card">
                      <h3>Виртуальный рабочий офис</h3>
-                     <p>Автоматизируем любой бизнес-процесс на платформе 1С</p>
+                     <p>Данный раздел находится в разработке</p>
                      <button>Подробнее</button>
                   </div>
-               </div>
-               <div class="partners col-xl-1">
-                  <a href="">Партнерам сюда</a>
                </div>
             </div>
       </div>
@@ -110,15 +107,18 @@ Template Name: Главная
             <div class="row">
                <div id="phrase_id" class="phrase__third col-xl-12">
                   <h1>Всегда на связи</h1>
-                  <h2>Как тебе удобнее поболтать с нами?</h2>
+                  <!--<h2>Как тебе удобнее поболтать с нами?</h2>
+                  <button id="btn__call" class="call">Заказать звонок</button>
+                  -->
                </div>
             </div>
+            <!--
             <div class="row">
                <div id="buttons" class="col-xl-12">
-                  <button id="btn__call" class="call">Заказать звонок</button>
-                  <button id="btn__write" class="write">Написать</button>
+                  
                </div>
             </div>
+            -->
          </div>
          <div class="container">
             <div class="row">
@@ -152,6 +152,7 @@ Template Name: Главная
                   ?>
                </div>
                <div class="row">
+               <!--
                   <div class="write__form" style="display:none;">
                   <div class="words col-xl-12">
                         <p>Просто напиши нам!</p>
@@ -172,6 +173,7 @@ Template Name: Главная
                         </div>
                      </div>
                   </div>
+                  -->
                </div>
          </div>
       </section>
@@ -191,8 +193,8 @@ Template Name: Главная
                </div>
                <div class="partners__third col-xl-8">
                   <h4>Все права защищены</h4>
-                  <h4>+7 (495) 799 15 09</h4>
-                  <h4>info@meideal.ru</h4>
+                  <h4><a href="tel:+7(495)7991509">+7 (495) 799 15 09</a></h4>
+                  <h4><a href="mailto:info@meideal.ru?subject=Письмо с meideal.ru" target="_blank" rel="noopener noreferrer">info@meideal.ru</a></h4>
                </div>
             </div>
          </div>

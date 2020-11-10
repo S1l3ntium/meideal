@@ -4,6 +4,18 @@
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/favicon-16x16.png">
+   <link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/site.webmanifest">
+   <link rel="mask-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/safari-pinned-tab.svg" color="#141414">
+   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/favicon.ico">
+   <meta name="apple-mobile-web-app-title" content="Meideal">
+   <meta name="application-name" content="Meideal">
+   <meta name="msapplication-TileColor" content="#141414">
+   <meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/mstile-144x144.png">
+   <meta name="msapplication-config" content="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/browserconfig.xml">
+   <meta name="theme-color" content="#ffffff">
 	<title>Meideal</title>
    <base href="/">  
 	<?php wp_head(); ?>
@@ -35,7 +47,7 @@
             <div class="hide__call__button col-xl-2"  style="display:none;">
                <button id="cll__button" class="call__menu__button">Позвонить</button>
             </div>
-            <button class="main__button col-xl-2">Заказать звонок</button>
+            <button class="main__button col-xl-2"><a href="/#thirdPage">Заказать звонок</a></button>
             <!--
             <div class="hide_back">
                <button class="back__to__top">На главную</button>

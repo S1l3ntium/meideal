@@ -30,7 +30,14 @@ body {
 .first,
 .third {
   color: #ffffff;
+  background: url("./assets/img/black_back.png") center center repeat-y;
   background-color: #141414;
+}
+
+.second {
+  color: #000;
+  background: url("./assets/img/white_back.png") center center repeat-y;
+  background-color: #fff;
 }
 
 header {
@@ -73,15 +80,23 @@ header button {
   width: 100%;
   height: 50px;
   margin: 10px 0;
-  color: #ffffff;
   background-color: rgba(0, 0, 0, 0);
   font-family: AvenirNextCyr;
   font-size: 14px;
   transition: 0.6s all ease-in-out;
 }
 
-header button:hover {
+header button a {
+  color: #fff;
+  transition: 0.6s all ease-in-out;
+}
+
+header button:hover a {
   color: #000;
+  transition: 0.6s all ease-in-out;
+}
+
+header button:hover {
   background-color: #fff;
   transition: 0.6s all ease-in-out;
 }
@@ -269,6 +284,11 @@ button.problem:hover {
   color: #000;
 }
 
+.fp-viewing-secondPage header button:hover a {
+  color: #fff;
+  transition: 0.6s all ease-in-out;
+}
+
 .fp-viewing-secondPage header button {
   display: flex;
   align-items: center;
@@ -343,6 +363,10 @@ h3 {
   color: #262626;
 }
 
+.slick-list.draggable {
+  padding-top: 30px;
+}
+
 .slider__works {
   min-width: 0;
   width: 100%;
@@ -372,7 +396,7 @@ h3 {
 }
 
 .card h3 {
-  margin: 50px 40px;
+  margin: 30px 40px;
 }
 
 .card p {
@@ -395,7 +419,6 @@ h3 {
   border-radius: 10px;
   height: 50px;
   width: 160px;
-  margin-top: 30px;
   color: #000;
   background-color: #fff;
   font-family: AvenirNextCyr;
@@ -407,16 +430,20 @@ h3 {
   display: none;
 }
 
-.card button:hover {
+.card button:hover a {
   color: #fff;
-  background-color: #262626;
+  transition: 0.6s all ease-in-out;
+}
+
+.card button:hover {
+  background-color: #000;
   transition: 0.6s all ease-in-out;
 }
 
 .card.slick-current {
   opacity: 1;
   background: #ffffff;
-  box-shadow: 0px 0px 11px 11px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 0px 30px 11px rgba(0, 0, 0, 0.06);
   border-radius: 20px;
 }
 
@@ -435,10 +462,12 @@ h3 {
 }
 
 .slider__works .slick-arrow.prev-college {
+  top: 120px;
   left: 0;
 }
 
 .slider__works .slick-arrow.next-college {
+  top: 120px;
   right: 0;
 }
 
@@ -452,13 +481,13 @@ h3 {
 
 @media (min-height: 576px) {
   .phrase__third {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
 }
 
 @media (min-height: 768px) {
   .phrase__third {
-    margin-bottom: 200px;
+    margin-bottom: 0px;
   }
 }
 
@@ -482,8 +511,9 @@ h3 {
 #buttons {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-direction: row;
+  margin-left: 80px;
 }
 
 button.call,
@@ -502,8 +532,9 @@ button.write {
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
-  width: 170px;
-  height: 50px;
+  height: 60px;
+  width: 225px;
+  margin-top: 30px;
 }
 
 button.call,
@@ -572,8 +603,8 @@ button.write:hover {
 }
 
 .call__form .fields .call {
-  margin-top: 90px;
-  margin-right: 150px;
+  margin-top: 30px;
+  margin-right: 50px;
   align-self: center;
 }
 
@@ -620,12 +651,34 @@ button.write:hover {
   align-self: center;
 }
 
+@media (min-height: 576px) {
+  .call__form {
+    margin-bottom: -30px;
+  }
+}
+
+@media (min-height: 768px) {
+  .call__form {
+    margin-bottom: 100px;
+  }
+}
+
 .hidden {
   display: none !important;
 }
 
-input {
-  border: none;
+input:focus,
+input:active {
+  background: none;
+}
+
+option {
+  color: #000;
+}
+
+option:focus,
+option:active {
+  background: none;
 }
 
 .input-line {
@@ -637,6 +690,7 @@ input {
   font-weight: 300;
   font-size: 18px;
   line-height: 22px;
+  border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.65);
   transition: all 0.6s ease;
 }
@@ -649,11 +703,14 @@ input {
 
 /* The container must be positioned relative: */
 .custom-select {
+  margin-bottom: 60px;
+  color: #fff;
+  width: 360px;
   position: relative;
   background: none;
   font-family: AvenirNextCyr;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 300 !important;
   font-size: 18px;
   line-height: 22px;
   border: none;
@@ -735,6 +792,7 @@ textarea {
 }
 
 .textarea-line {
+  position: relative;
   padding: 1px 2px;
   padding-right: 70px;
   background: none;
@@ -763,8 +821,27 @@ textarea {
 .message .limiter {
   position: absolute;
   top: 14px;
-  right: 145px;
+  right: 2px;
   margin: -12px 0 0 -8px;
   box-sizing: border-box;
   transition: all 0.6s ease;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  border: none;
+  color: #46b450;
+}
+
+.wpcf7 form .wpcf7-response-output {
+  margin: 1em 0.5em 1em;
+  padding: 0.2em 1em;
+  border: none;
+}
+
+.wpcf7-not-valid-tip {
+  margin-top: -14px;
+  color: #dc3232;
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
 }
